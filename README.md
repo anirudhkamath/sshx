@@ -1,10 +1,12 @@
-# A wrapper around the SSH client provided on the BASH shell
+# A wrapper for the SSH client on the BASH shell
 
 In this repository, the file `sshx.sh` is meant to be a command line SSH client tool that can get you results from your remote device in a quick and automated manner. By no means is this perfect (yet), but it a clean, fun way to interact with network devices to get instant results from the CLI.
 
-The file `sshx.sh` is a bash shell script which should reside in your file system in an executable mode. Be sure to `chmod +x` the file!
+The file `sshx.sh` is a BASH shell script which should reside in your file system in an executable mode. Be sure to `chmod +x` the file!
 
 # How to use
+
+> This script works on [`expect`](https://www.tcl.tk/man/expect5.31/expect.1.html), a program that lets you automate interactions with interactive programs such as Telnet and FTP clients. Ensure you have the package installed- `sudo apt-get install expect` should do it for you on BASH.
 
 Say you cloned this repository on your system at `/home/sshx`. After giving the file an executable mode via `chmod`, visit your user's `bashrc` file to include the following alias at the end:
 
